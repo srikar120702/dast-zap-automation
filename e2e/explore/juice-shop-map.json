@@ -1,0 +1,703 @@
+{
+  "navLinks": [
+    "#/login",
+    "#/contact",
+    "#/chatbot",
+    "#/about",
+    "#/photo-wall"
+  ],
+  "authNavLinks": [
+    "#/contact",
+    "#/complain",
+    "#/chatbot",
+    "#/about",
+    "#/photo-wall",
+    "#/deluxe-membership",
+    "#/score-board"
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "title": "OWASP Juice Shop",
+      "api": [],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-select-0"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Add to Basket",
+        "Previous page",
+        "Next page"
+      ]
+    },
+    {
+      "route": "/search?q=apple",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /api/Quantitys/",
+        "GET /rest/products/search"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-select-1"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Add to Basket",
+        "Previous page",
+        "Next page"
+      ]
+    },
+    {
+      "route": "/login",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/admin/application-configuration"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#email",
+        "#password",
+        "#loginButton",
+        "#rememberMe-input",
+        "#loginButtonPasskey",
+        "#loginButtonGoogle"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Show password",
+        "Login",
+        "Login with Passkey",
+        "Login with Google"
+      ]
+    },
+    {
+      "route": "/register",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /api/SecurityQuestions/"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#emailControl",
+        "#passwordControl",
+        "#repeatPasswordControl",
+        "#mat-mdc-slide-toggle-0-button",
+        "#securityQuestionControl",
+        "#securityAnswerControl",
+        "#registerButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Button to complete the registration"
+      ]
+    },
+    {
+      "route": "/forgot-password",
+      "title": "OWASP Juice Shop",
+      "api": [],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#email",
+        "#securityAnswer",
+        "#newPassword",
+        "#newPasswordRepeat",
+        "#mat-mdc-slide-toggle-1-button",
+        "#resetButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Button to confirm the changes"
+      ]
+    },
+    {
+      "route": "/contact",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/captcha/",
+        "GET /rest/user/whoami"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-input-11",
+        "#comment",
+        "#rating",
+        "#captchaControl",
+        "#submitButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Button to send the review"
+      ]
+    },
+    {
+      "route": "/about",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /api/Feedbacks/",
+        "GET /rest/admin/application-configuration"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    },
+    {
+      "route": "/photo-wall",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/admin/application-configuration",
+        "GET /rest/memories/"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Tweet",
+        "BlueSky",
+        "Mastodon"
+      ]
+    },
+    {
+      "route": "/score-board",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /api/Challenges/",
+        "GET /api/Hints/",
+        "GET /rest/admin/application-configuration",
+        "GET /rest/tags"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-input-14",
+        "#mat-select-3",
+        "#mat-select-4",
+        "#mat-select-5",
+        "#reset-filters"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "reset all filters",
+        "Open additional settings dialog"
+      ]
+    },
+    {
+      "route": "/chatbot",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/admin/application-configuration"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Send message"
+      ]
+    },
+    {
+      "route": "/track-result?id=1",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/track-order/{id}"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    },
+    {
+      "route": "ACTION login",
+      "api": [
+        "GET /rest/admin/application-configuration",
+        "GET /rest/basket/{id}",
+        "GET /rest/user/whoami",
+        "POST /rest/user/login"
+      ],
+      "landed": "http://localhost:3000/#/search"
+    },
+    {
+      "route": "ACTION add-to-basket",
+      "api": [
+        "GET /api/Products/{id}",
+        "GET /rest/basket/{id}",
+        "POST /api/BasketItems/"
+      ]
+    },
+    {
+      "route": "ACTION product-details dialog",
+      "api": [
+        "GET /rest/products/{id}/reviews",
+        "GET /rest/user/whoami"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-select-0",
+        "#mat-input-1",
+        "#submitButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Add to Basket",
+        "Previous page",
+        "Next page",
+        "Rate a helpful review",
+        "Close Dialog",
+        "Send the review"
+      ]
+    },
+    {
+      "route": "/basket",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/basket/{id}",
+        "GET /rest/user/whoami"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#checkoutButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    },
+    {
+      "route": "/address/select",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /api/Addresss"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Add New Address",
+        "Continue"
+      ]
+    },
+    {
+      "route": "/address/create",
+      "title": "OWASP Juice Shop",
+      "api": [],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-input-2",
+        "#mat-input-3",
+        "#mat-input-4",
+        "#mat-input-5",
+        "#address",
+        "#mat-input-7",
+        "#mat-input-8",
+        "#submitButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    },
+    {
+      "route": "/payment/shop",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /api/Cards",
+        "GET /api/Deliverys/null",
+        "GET /rest/admin/application-configuration",
+        "GET /rest/wallet/balance"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-input-9",
+        "#mat-input-10",
+        "#submitButton",
+        "#coupon",
+        "#applyCouponButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Proceed to review"
+      ]
+    },
+    {
+      "route": "/saved-payment-methods",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /api/Cards"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-input-14",
+        "#mat-input-15",
+        "#submitButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    },
+    {
+      "route": "/order-history",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/order-history"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    },
+    {
+      "route": "/complain",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/user/whoami"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-input-18",
+        "#complaintMessage",
+        "#file",
+        "#submitButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Button to send the complaint"
+      ]
+    },
+    {
+      "route": "/recycle",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /api/Addresss",
+        "GET /api/Recycles/",
+        "GET /rest/admin/application-configuration",
+        "GET /rest/user/whoami"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-input-20",
+        "#mat-input-21",
+        "#recycleButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    },
+    {
+      "route": "/wallet",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/wallet/balance"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-input-22",
+        "#submitButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Button to continue to payment"
+      ]
+    },
+    {
+      "route": "/deluxe-membership",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /rest/admin/application-configuration",
+        "GET /rest/deluxe-membership"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Become deluxe member"
+      ]
+    },
+    {
+      "route": "/privacy-security/data-export",
+      "title": "OWASP Juice Shop",
+      "api": [],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-radio-43-input",
+        "#mat-radio-44-input",
+        "#mat-radio-45-input",
+        "#submitButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Button to send the request"
+      ]
+    },
+    {
+      "route": "/privacy-security/change-password",
+      "title": "OWASP Juice Shop",
+      "api": [],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#currentPassword",
+        "#newPassword",
+        "#newPasswordRepeat",
+        "#changeButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Button to confirm the change"
+      ]
+    },
+    {
+      "route": "/privacy-security/two-factor",
+      "title": "OWASP Juice Shop",
+      "api": [
+        "GET /api/Quantitys/",
+        "GET /rest/products/search"
+      ],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton",
+        "#mat-select-1"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu",
+        "Add to Basket",
+        "Previous page",
+        "Next page"
+      ]
+    },
+    {
+      "route": "/privacy-security/last-login-ip",
+      "title": "OWASP Juice Shop",
+      "api": [],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    },
+    {
+      "route": "/accounting",
+      "title": "OWASP Juice Shop",
+      "api": [],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    },
+    {
+      "route": "/administration",
+      "title": "OWASP Juice Shop",
+      "api": [],
+      "ids": [
+        "#navbarAccount",
+        "#navbarLanguageButton"
+      ],
+      "buttons": [
+        "Open Sidenav",
+        "Back to homepage",
+        "Open search",
+        "Close search",
+        "Show/hide account menu",
+        "Show the shopping cart",
+        "Language selection menu"
+      ]
+    }
+  ]
+}

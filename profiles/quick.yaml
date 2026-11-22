@@ -1,0 +1,32 @@
+# Profile = HOW to scan. Reusable across any target/context.
+name: quick
+description: Fast passive-only pass, suitable for every PR.
+
+mode: passive              # passive | active   (CLI --mode overrides)
+discovery: playwright      # spider | playwright (CLI --discovery overrides)
+
+playwright:
+  project_dir: ./e2e
+  modules: [catalog, basket]   # subset of context.modules; CLI --modules overrides
+  timeout_minutes: 15
+
+spider:
+  max_duration_minutes: 2
+  max_depth: 5
+  ajax: true
+  ajax_max_duration_minutes: 2
+
+passive:
+  wait_timeout_minutes: 5      # max time to drain the passive-scan queue
+
+active:                        # ignored when mode=passive
+  policy: quick-policy
+  attack_strength: LOW         # LOW | MEDIUM | HIGH | INSANE
+  alert_threshold: MEDIUM      # LOW | MEDIUM | HIGH
+  max_duration_minutes: 10
+
+reporting:
+  out_dir: ./reports
+  formats: [html, json]
+  fail_on: high                # fail CI when any alert >= this risk (informational|low|medium|high)
+  min_confidence: medium       # ignore alerts below this confidence (low|medium|high)

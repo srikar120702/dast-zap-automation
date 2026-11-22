@@ -1,0 +1,11 @@
+.env
+.venv/
+reports/
+e2e/node_modules/
+e2e/test-results/
+e2e/playwright-report/
+__pycache__/
+test-results/
+playwright-report/
+e2e/explore/*.png
+*.pyc

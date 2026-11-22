@@ -1,0 +1,32 @@
+# Profile = HOW to scan. Deeper, slower pass for nightly runs.
+name: full
+description: Full active scan across all modules, nightly.
+
+mode: active
+discovery: playwright
+
+playwright:
+  project_dir: ./e2e
+  modules: all
+  timeout_minutes: 30
+
+spider:
+  max_duration_minutes: 5
+  max_depth: 10
+  ajax: true
+  ajax_max_duration_minutes: 5
+
+passive:
+  wait_timeout_minutes: 10
+
+active:
+  policy: full-policy
+  attack_strength: MEDIUM
+  alert_threshold: LOW
+  max_duration_minutes: 45
+
+reporting:
+  out_dir: ./reports
+  formats: [html, json]
+  fail_on: medium
+  min_confidence: low

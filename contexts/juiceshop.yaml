@@ -1,0 +1,36 @@
+# Context = WHAT to scan and AS WHOM. Specific to one application.
+name: juiceshop
+
+# URL as seen from ZAP (inside the docker network). The browser also uses it,
+# because its traffic goes through ZAP.
+target: http://juice-shop:3000
+
+scope:
+  include:
+    - http://juice-shop:3000.*
+  exclude:
+    - .*/socket\.io/.*            # websocket noise
+    - .*/rest/user/logout.*       # don't kill our own session
+    - .*\.(png|jpg|jpeg|gif|svg|ico|woff2?|ttf)$
+  # Recorded and passively scanned, but never attacked by the active scanner.
+  active_exclude:
+    - .*/rest/user/change-password.*   # fuzzing would change the scan user's password
+    - .*/rest/user/reset-password.*
+    - .*/rest/saveLoginIp.*
+
+auth:
+  type: jwt_bearer
+  # Called directly by dast_scan.py from the host, not through ZAP.
+  login_url: http://localhost:3000/rest/user/login
+  username_env: JS_USER          # values come from .env, never stored here
+  password_env: JS_PASS
+  token_json_path: authentication.token
+  header: Authorization
+  header_prefix: "Bearer "
+
+# Module name -> Playwright tag. The profile/CLI chooses which ones run.
+modules:
+  account:  "@account"
+  catalog:  "@catalog"
+  basket:   "@basket"
+  feedback: "@feedback"
